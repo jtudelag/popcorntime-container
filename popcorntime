@@ -4,9 +4,9 @@ set -e
 
         #USER_UID=$(id -u)
         #USER_GID=$(id -g)
-        xhost +local:docker
+        xhost +local:podman
 
-sudo docker run --rm \
+sudo podman run --rm \
         --privileged \
         --net host \
         --memory 1G \
